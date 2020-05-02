@@ -1,11 +1,10 @@
-'''determine minimum steps in a mobile game jumping clouds. Jump has to be 1 or 2 steps.
-Jump may only be on cloud '0', not '1'.
-sample input:
-7
-0 0 1 0 0 1 0
-sample output:
-4
-'''
+# determine minimum steps in a mobile game jumping clouds. Jump has to be 1 or 2 steps.
+# Jump may only be on cloud '0', not '1'.
+# sample input:
+# 7
+# 0 0 1 0 0 1 0
+# sample output:
+# 4
 
 
 def jumping_on_clouds(cloud_list):

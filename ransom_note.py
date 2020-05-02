@@ -1,13 +1,12 @@
-'''Check if magazine contains all words for the ransom note (case-sensitive)
-input: m = number of words in magazine, n = number of words in ransom note, magazine-string, note-string
-m, n <= 30000
-sample input:
-6 4
-give me one grand today night
-give one grand today
-sample output:
-yes
-'''
+# Check if magazine contains all words for the ransom note (case-sensitive)
+# input: m = number of words in magazine, n = number of words in ransom note, magazine-string, note-string
+# m, n <= 30000
+# sample input:
+# 6 4
+# give me one grand today night
+# give one grand today
+# sample output:
+# yes
 
 
 def check_magazine(magazine, note):

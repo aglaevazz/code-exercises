@@ -1,4 +1,4 @@
-'''bubble sort and count swaps'''
+# bubble sort and count swaps
 
 
 def bubble_sort(n, array):

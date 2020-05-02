@@ -1,11 +1,11 @@
-'''Count the valleys a hiker goes through starting and endig at sea level.
-n = number of steps: 2 <= n <= 10^6
-s = string of steps D: down, U: up
-sample input:
-8
-UDDDUDUU
-sample output:
-1'''
+# Count the valleys a hiker goes through starting and endig at sea level.
+# n = number of steps: 2 <= n <= 10^6
+# s = string of steps D: down, U: up
+# sample input:
+# 8
+# UDDDUDUU
+# sample output:
+# 1
 
 
 def counting_valleys(steps):
