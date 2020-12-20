@@ -18,18 +18,28 @@ def is_up_to_one_away(string1, string2):
 
 
 def difference_is_up_to_max_difference(string1, string2, max_difference):
-    string1_alphabet = [0 for character in range(129)]
-    string2_alphabet = [0 for character in range(129)]
-    for character in string1:
-        string1_alphabet[ord(character)] += 1
+    string1_map = get_string_map(string1)
     for character in string2:
-        string2_alphabet[ord(character)] += 1
-    difference = 0
-    for i, j in zip(string1_alphabet, string2_alphabet):
-        difference += abs(i-j)
-        if difference > max_difference:
-            return False
+        if character in string1_map:
+            string1_map[character] -= 1
+        else:
+            string1_map[character] = -1
+    difference_between_strings = 0
+    for value in list(string1_map.values()):
+        difference_between_strings += abs(value)
+    if difference_between_strings > max_difference:
+        return False
     return True
+
+
+def get_string_map(string):
+    string_map = {}
+    for character in string:
+        if character in string_map:
+            string_map[character] += 1
+        else:
+            string_map[character] = 1
+    return string_map
 
 
 class TestOneAway(unittest.TestCase):
